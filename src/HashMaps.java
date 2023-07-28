@@ -44,27 +44,27 @@ public class HashMaps {
 
 
         //Searching
-        if(map.containsKey("Indonesia")) {
-            System.out.println("key is present in the map");
-        } else {
-            System.out.println("key is not present in the map");
-        }
-
-
-        System.out.println(map.get("China")); //key exists
-        System.out.println(map.get("Indonesia")); //key doesn't exist
+//        if(map.containsKey("Indonesia")) {
+//            System.out.println("key is present in the map");
+//        } else {
+//            System.out.println("key is not present in the map");
+//        }
+//
+//
+//        System.out.println(map.get("China")); //key exists
+//        System.out.println(map.get("Indonesia")); //key doesn't exist
 
 
 //        //Iteration (1)
-//        for( Map.Entry<String, Integer> e : map.entrySet()) {
-//            System.out.println(e.getKey());
-//            System.out.println(e.getValue());
-//        }
+        Set<String> keys = map.keySet();
+        for (String k: keys) {
+            System.out.println("Key = " + k + ", Value = " + map.get(k));
+        }
 
 
         //Iteration (2)
-        Set<String> keys = map.keySet();
-        System.out.println(keys);
+        Set<String> key = map.keySet();
+        System.out.println(key);
 
 
         //Removing
