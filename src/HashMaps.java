@@ -55,18 +55,16 @@ public class HashMaps {
         System.out.println(map.get("Indonesia")); //key doesn't exist
 
 
-        //Iteration (1)
-        for( Map.Entry<String, Integer> e : map.entrySet()) {
-            System.out.println(e.getKey());
-            System.out.println(e.getValue());
-        }
+//        //Iteration (1)
+//        for( Map.Entry<String, Integer> e : map.entrySet()) {
+//            System.out.println(e.getKey());
+//            System.out.println(e.getValue());
+//        }
 
 
         //Iteration (2)
         Set<String> keys = map.keySet();
-        for(String key : keys) {
-            System.out.println(key+ " " + map.get(key));
-        }
+        System.out.println(keys);
 
 
         //Removing
