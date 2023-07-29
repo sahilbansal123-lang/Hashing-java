@@ -33,7 +33,6 @@ public class HashMaps {
         map.put("US", 30);
         map.put("China", 150);
 
-
         System.out.println(map);
 
         map.put("China", 180);
