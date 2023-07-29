@@ -42,7 +42,6 @@ public class HashMaps {
 
 
 
-
         //Searching
 //        if(map.containsKey("Indonesia")) {
 //            System.out.println("key is present in the map");
