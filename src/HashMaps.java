@@ -36,7 +36,6 @@ public class HashMaps {
 
         System.out.println(map);
 
-
         map.put("China", 180);
         System.out.println(map);
 
