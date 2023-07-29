@@ -54,7 +54,6 @@ public class HashMaps {
 //        System.out.println(map.get("China")); //key exists
 //        System.out.println(map.get("Indonesia")); //key doesn't exist
 
-
 //        //Iteration (1)
         Set<String> keys = map.keySet();
         for (String k: keys) {
