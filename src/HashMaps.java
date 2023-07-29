@@ -61,7 +61,6 @@ public class HashMaps {
             System.out.println("Key = " + k + ", Value = " + map.get(k));
         }
 
-
         //Iteration (2)
         Set<String> key = map.keySet();
         System.out.println(key);
