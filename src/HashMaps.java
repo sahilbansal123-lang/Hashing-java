@@ -38,16 +38,16 @@ public class HashMaps {
         System.out.println(map);
 
 
-        //Searching
-//        if(map.containsKey("Indonesia")) {
-//            System.out.println("key is present in the map");
-//        } else {
-//            System.out.println("key is not present in the map");
-//        }
-//
-//
-//        System.out.println(map.get("China")); //key exists
-//        System.out.println(map.get("Indonesia")); //key doesn't exist
+//        Searching
+        if(map.containsKey("Indonesia")) {
+            System.out.println("key is present in the map");
+        } else {
+            System.out.println("key is not present in the map");
+        }
+
+
+        System.out.println(map.get("China")); //key exists
+        System.out.println(map.get("Indonesia")); //key doesn't exist
 
 //        //Iteration (1)
         Set<String> keys = map.keySet();
