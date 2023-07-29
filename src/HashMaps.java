@@ -27,7 +27,6 @@ public class HashMaps {
         //Creation
         HashMap<String, Integer> map = new HashMap<>();
 
-
         //Insertion
         map.put("India", 120);
         map.put("US", 30);
