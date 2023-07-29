@@ -70,8 +70,6 @@ public class HashMaps {
         //Removing
         map.remove("China");
         System.out.println(map);
-
-
     }
 }
 
