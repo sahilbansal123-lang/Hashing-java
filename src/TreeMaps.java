@@ -4,6 +4,7 @@ public class TreeMaps {
 
     public static void main(String[] args) {
         TreeMap<String, Integer> tm = new TreeMap<>();
+        // Sorted on the basis of key
         tm.put("India", 120);
         tm.put("PAKISTAN", 100);
         tm.put("ITALY", 110);
