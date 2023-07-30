@@ -1,4 +1,6 @@
 import java.util.LinkedList;
+import java.util.Map;
+import java.util.Stack;
 
 public class HashMapImplementation {
 
@@ -12,17 +14,34 @@ public class HashMapImplementation {
             }
         }
 
-        private int size; // n
-        private LinkedList<Node> bucket[]; // N
+        private int n; // n
+        private int N;
+        private LinkedList<Node>[] bucket; // N
 
         @SuppressWarnings("UnChecked")
         public HashMap() {
-            this.size = 0;
+            this.N = 4;
             this.bucket = new LinkedList[4];
-            for (int i = 0; i < bucket.length; i++) {
+            for (int i = 0; i < 4; i++) {
                 this.bucket[i] = new LinkedList<>();
             }
         }
+
+        private int hashFunction(K key) {
+            int hc = key.hashCode();
+            return Math.abs(hc) % bucket.length;
+        }
+
+        private int searchLL(K key, int bi) {
+        }
+        public void put(K key, V value) {
+            int bi = hashFunction(key);
+            int di = searchLL(key, bi);
+        }
+
+
+
+
     }
 
 
