@@ -33,10 +33,28 @@ public class HashMapImplementation {
         }
 
         private int searchLL(K key, int bi) {
+            LinkedList<Node> ll = bucket[bi];
+            int di = 0;
+            for (int i = 0; i < ll.size(); i++) {
+                Node node = ll.get(i);
+                if (node.key == key) {
+                    return di;
+                }
+                di++;
+            }
+            return -1;
         }
         public void put(K key, V value) {
             int bi = hashFunction(key);
             int di = searchLL(key, bi);
+
+            if (di != -1) {
+                Node node = bucket[bi].get(di);
+                node.value = value;
+            } else {
+                Node node = bucket[bi].add(new Node(key, value));
+                n++;
+            }
         }
 
 
