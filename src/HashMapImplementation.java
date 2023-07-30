@@ -1,6 +1,4 @@
 import java.util.LinkedList;
-import java.util.Map;
-import java.util.Stack;
 
 public class HashMapImplementation {
 
@@ -52,7 +50,7 @@ public class HashMapImplementation {
                 Node node = bucket[bi].get(di);
                 node.value = value;
             } else {
-                Node node = bucket[bi].add(new Node(key, value));
+                boolean node = bucket[bi].add(new Node(key, value));
                 n++;
             }
         }
