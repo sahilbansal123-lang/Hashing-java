@@ -1,6 +1,6 @@
 import java.util.LinkedHashMap;
 
-public class LinkedHashMaps {
+public class LinkedHashMaps { // ordered
 
     public static void main(String[] args) {
         LinkedHashMap<String, Integer> lhm = new LinkedHashMap<>();
