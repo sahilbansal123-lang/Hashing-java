@@ -1,3 +1,5 @@
+package HashMap;
+
 import java.util.LinkedHashMap;
 
 public class LinkedHashMaps { // ordered

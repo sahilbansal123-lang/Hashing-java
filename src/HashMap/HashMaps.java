@@ -1,4 +1,4 @@
-
+package HashMap;
 //        HashMap: is a collection that stores data in key-value pairs. It provides a way to store and retrieve objects
 //                 based on a unique key. The HashMap class is a part of the Java Collections Framework and is used to
 //                 implement the Map interface.
@@ -16,7 +16,7 @@
 //            It does not maintain the insertion order of the elements.
 //            It uses the hash code of the key to retrieve values, so it provides fast access to elements.
 //            It allows for duplicate values, but not duplicate keys.
-//        HashMaps are commonly used in Java for implementing caching mechanisms, for storing and retrieving
+//        HashMap.HashMaps are commonly used in Java for implementing caching mechanisms, for storing and retrieving
 //        data, and for implementing algorithms that require fast access to elements.
 
 import java.util.*;
