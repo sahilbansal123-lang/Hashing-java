@@ -6,12 +6,15 @@ public class MajorityElements {
     public static void majorityElement(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
-        for (int curr : nums) {
-            if (map.containsKey(curr)) {
-                map.put(curr, map.get(curr) + 1);
-            } else {
-                map.put(curr, 1);
-            }
+        for (int i = 0; i < nums.length; i++) {
+
+//            if (map.containsKey(curr)) {
+//                map.put(curr, map.get(curr) + 1);
+//            } else {
+//                map.put(curr, 1);
+//            }
+
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
         }
 
         Set<Integer> keySet = map.keySet();
