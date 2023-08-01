@@ -20,7 +20,9 @@ public class IterationsOnSet {
         }
 
         //  Enhanced ForLoop Time Complexity O(N)
-
+        for (String city: cities) {
+            System.out.println(city);
+        }
 
 
     }
