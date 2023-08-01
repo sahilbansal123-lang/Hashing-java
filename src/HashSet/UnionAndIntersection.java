@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class UnionAndIntersection {
 
-    public static void union(int arr1[], int arr2[]) {
+    public static void union(int[] arr1, int[] arr2) {
         HashSet<Integer> set = new HashSet<>();
 
         for (int i = 0; i < arr1.length; i++) {
@@ -15,7 +15,7 @@ public class UnionAndIntersection {
         }
         System.out.println(set);
     }
-    public static void Intersection(int arr1[], int arr2[]) {
+    public static void Intersection(int[] arr1, int[] arr2) {
         HashSet<Integer> set = new HashSet<>();
         for (int i = 0; i < arr1.length; i++) {
             set.add(arr1[i]);
@@ -32,8 +32,8 @@ public class UnionAndIntersection {
     }
 
     public static void main(String[] args) {
-        int arr2[] = {6, 3, 9, 2, 9, 4};
-        int arr1[] = {7, 3, 9};
+        int[] arr2 = {6, 3, 9, 2, 9, 4};
+        int[] arr1 = {7, 3, 9};
 
         union(arr1, arr2);
         Intersection(arr1,arr2);
