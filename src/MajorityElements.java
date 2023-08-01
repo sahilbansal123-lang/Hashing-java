@@ -1,12 +1,11 @@
 import java.util.HashMap;
-import java.util.Set;
 
 public class MajorityElements {
 
     public static void majorityElement(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int num : nums) {
 
 //            if (map.containsKey(curr)) {
 //                map.put(curr, map.get(curr) + 1);
@@ -14,7 +13,7 @@ public class MajorityElements {
 //                map.put(curr, 1);
 //            }
 
-            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+            map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
         for (Integer keys: map.keySet()) {
