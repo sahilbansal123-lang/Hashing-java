@@ -3,6 +3,7 @@ package HashMap;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.TreeMap;
 
 public class BottomViewOfBT {
 
@@ -16,6 +17,7 @@ public class BottomViewOfBT {
             this.left = null;
             this.right = null;
             this.data = data;
+            this.height = 0;
         }
 
     }
@@ -45,19 +47,22 @@ public class BottomViewOfBT {
                 q.add(temp.right);
             }
         }
-        System.out.println(map.values());
+        TreeMap<Integer, Integer> sortedMap = new TreeMap<>(map);
+        for (int value : sortedMap.values()) {
+            System.out.print(value + " ");
+        }
     }
 
     public static void main(String[] args) {
-        Node root = new Node(50);
-        root.left = new Node(30);
-        root.right = new Node(70);
-        root.left.left = new Node(20);
-        root.left.right = new Node(40);
-        root.right.left = new Node(60);
-        root.right.right = new Node(80);
-//        root.left.right.left = new Node(10);
-//        root.left.right.right = new Node(14);
+        Node root = new Node(20);
+        root.left = new Node(8);
+        root.right = new Node(22);
+        root.left.left = new Node(5);
+        root.left.right = new Node(3);
+        root.right.left = new Node(4);
+        root.right.right = new Node(25);
+        root.left.right.left = new Node(10);
+        root.left.right.right = new Node(14);
 
         bottomView(root);
     }
