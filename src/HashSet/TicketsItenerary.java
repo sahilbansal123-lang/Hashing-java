@@ -21,6 +21,18 @@ public class TicketsItenerary {
 
 
     public static void main(String[] args) {
+        HashMap<String, String> tickets = new HashMap<>();
+        tickets.put("Chennai", "Banglore");
+        tickets.put("Mumbai", "Delhi");
+        tickets.put("Goa", "Chennai");
+        tickets.put("Delhi", "Goa");
+
+        String start = getStart(tickets);
+        System.out.print(start);
+        for (String key: tickets.keySet()) {
+            System.out.print(" -> " + tickets.get(start));
+            start = tickets.get(start);
+        }
 
     }
 }
